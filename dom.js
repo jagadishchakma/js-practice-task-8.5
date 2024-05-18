@@ -40,7 +40,7 @@ function displayMeals(data){
 
 function detailsMeals(id){
     let container = document.querySelector(".product-box");
-    fetch(`http://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
         .then(res=>res.json())
         .then(data => {
             let meal = data.meals[0]
